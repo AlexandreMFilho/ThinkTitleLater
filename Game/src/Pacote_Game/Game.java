@@ -1,5 +1,8 @@
 package Pacote_Game;
+import java.awt.Graphics2D;
+import java.awt.Image;
 import javax.swing.JFrame;
+import javax.swing.Timer;
 public class Game extends JFrame {
     public static void main(String Args[]){
         new Game();
@@ -23,5 +26,8 @@ public class Game extends JFrame {
         
     }
     private Timer timer;
+    private Fase fase;
+    private Image fundo;
+    private Graphics2D grafico;
     
 }
