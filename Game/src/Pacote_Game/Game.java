@@ -20,5 +20,6 @@ public class Game extends JFrame {
         setResizable(false);
         //Torna visível a tela
         setVisible(true);
+        
     }
 }
