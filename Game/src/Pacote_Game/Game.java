@@ -27,21 +27,21 @@ public class Game extends JFrame {
         setResizable(false);
         //Torna visível a tela
         setVisible(true);
-        
+
     }
     public void inicializar(){
         fase = new Fase();
         add(fase);
-        ImageIcon referencia = new ImageIcon("INSIRA O DIRETÓRIO AQUI");
+        ImageIcon referencia = new ImageIcon("SPRITES/background/PNG/Battleground3/Bright/Battleground3.png");
         fundo = referencia.getImage();
     }
     private Timer timer;
     private Fase fase;
     private Image fundo;
     private Graphics2D grafico;
-    
+
     private class Listener implements ActionListener{
-        public void actionPerfomed(ActionEvent e){ 
+        public void actionPerfomed(ActionEvent e){
             fase.repaint();
         }
 
@@ -52,23 +52,23 @@ public class Game extends JFrame {
     }
     public class Fase extends JPanel{
        private static final long serialVersionUID = 1l;
-       
+
        protected static final int altura = 600;
        protected static final int largura = 600;
-       
+
        protected Fase(){
            setDoubleBuffered(true);
        }
        public void paint(Graphics g){
            grafico = (Graphics2D) g;
            grafico.drawImage(fundo,0,0, null);
-           g.dispose();         
+           g.dispose();
        }
        public int getLar(){
            return largura;
        }
        public int getAlt(){
            return altura;
-       }    
-    }     
+       }
+    }
 }
