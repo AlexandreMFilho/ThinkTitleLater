@@ -1,2 +1,4 @@
 # ThinkTitleLater
-Um teste da Lib LWJGL para iniciação a criação de jogos.
+Um teste da Lib *** para iniciação a criação de jogos.
+
+Objetivo:
