@@ -41,7 +41,8 @@ public class Game extends JFrame {
     private Graphics2D grafico;
     
     private class Listener implements ActionListener{
-        public void actionPerfomed(ActionEvent e){       
+        public void actionPerfomed(ActionEvent e){ 
+            fase.repaint();
         }
 
         @Override
