@@ -23,5 +23,4 @@ while janela_aberta:
     #Torna a imagem visível
     tela.blit(fundo, (0,0))
     #Atualiza o frame
-    pygame.display.update()            
-
+    pygame.display.update()
