@@ -1,4 +1,8 @@
 package player;
+
+import java.awt.Image;
+import javax.swing.ImageIcon;
+
 public class Personagem {
     /*coordenadas do personagem*/
     private int x;
@@ -10,7 +14,7 @@ public class Personagem {
     private int pos;
 
     /*objeto imagem personagem*/
-    private Image personagem;
+    private Image imagem;
 
     /*status pesonagem*/
     private boolean isVisivel;

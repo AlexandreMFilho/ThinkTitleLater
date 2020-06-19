@@ -6,6 +6,7 @@ import java.awt.Image;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.*;
+import player.Personagem;
 public class Game extends JFrame {
     public static void main(String Args[]){
         new Game();
@@ -32,10 +33,10 @@ public class Game extends JFrame {
     public void inicializar(){
         fase = new Fase();
         add(fase);
-        ImageIcon referencia = new ImageIcon("SPRITES/background/PNG/Battleground3/Bright/Battleground3.png");
+        ImageIcon referencia = new ImageIcon("/imagem/Battleground3.png");
         fundo = referencia.getImage();
          /*Instacia o objeto personagem*/
-         personagem = new Personagem();
+        personagem = new Personagem();
     }
     private Timer timer;
     private Fase fase;
