@@ -34,11 +34,14 @@ public class Game extends JFrame {
         add(fase);
         ImageIcon referencia = new ImageIcon("SPRITES/background/PNG/Battleground3/Bright/Battleground3.png");
         fundo = referencia.getImage();
+         /*Instacia o objeto personagem*/
+         personagem = new Personagem();
     }
     private Timer timer;
     private Fase fase;
     private Image fundo;
     private Graphics2D grafico;
+    private Personagem personagem;
 
     private class Listener implements ActionListener{
         public void actionPerfomed(ActionEvent e){
@@ -62,6 +65,8 @@ public class Game extends JFrame {
        public void paint(Graphics g){
            grafico = (Graphics2D) g;
            grafico.drawImage(fundo,0,0, null);
+           /*Desenha Personagem*/
+           grafico.drawImage(personagem.getImagem(), personagem.getX(), personagem.getY(), personagem.getX() + personagem.getLar(), personagem.getY() + personagem.getAlt(), 1+(personagem.getPos() * personagem.getLar()), 1, 1+(personagem.getPos() * personagem.getLar()) + personagem.getLar(), personagem.getAlt() +1,null );
            g.dispose();
        }
        public int getLar(){
